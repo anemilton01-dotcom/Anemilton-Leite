@@ -21,7 +21,7 @@ Estou em transição de carreira para o ecossistema de Tecnologia, unindo uma ba
 #### 🌐 [Dashboard de Monitoramento de APIs](https://github.com/Anemilton-Leite/nome-do-repositorio)
 Aplicação Full-stack (Node.js + Vanilla JS) que consome dados externos e apresenta indicadores dinâmicos em tempo real, unindo habilidades de **Front-end** e **Consumo de APIs**.
 
-#### ☁️ [Laboratórios de Infraestrutura GCP](https://github.com/SEU-USUARIO/nome-do-repositorio)
+#### ☁️ [Laboratórios de Infraestrutura GCP](https://github.com/Anemilton-Leite/nome-do-repositorio)
 Repositório documentando automações em nuvem, configuração de instâncias de VM, regras de firewall e gerenciamento de armazenamento (Buckets) via CLI.
 
 ---
@@ -29,8 +29,8 @@ Repositório documentando automações em nuvem, configuração de instâncias d
 ### 📊 Estatísticas e Atividade
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&langs_count=7&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Anemilton-Leite&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anemilton-Leite&layout=compact&langs_count=7&theme=tokyonight"/>
 </p>
 
 ---
