@@ -1,47 +1,118 @@
-# 🚀 Olá, eu sou o Anemilton Leite!
-### **Security-Minded Developer | ADS Student | Tech Transitioner**
+# 🏠 House Price Predictor
 
-Estou em transição de carreira para o ecossistema de Tecnologia, unindo uma base sólida em **Segurança da Informação** e **Redes** com o desenvolvimento de software moderno. Minha trajetória anterior em liderança e gestão de indicadores me conferiu um olhar analítico voltado para a eficiência de processos e resolução de problemas críticos.
+Um projeto de Machine Learning para prever preços de imóveis usando técnicas de regressão e análise exploratória de dados (EDA).
 
----
-
-### 🛠️ Minha Stack Tecnológica
-
-| Categoria | Tecnologias |
-| :--- | :--- |
-| **Front-end** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
-| **Back-end** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white) |
-| **Cloud & Infra** | ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-| **Segurança** | ![ISO 27001](https://img.shields.io/badge/ISO/IEC_27001-Certified_Mindset-blue?style=for-the-badge) ![Networking](https://img.shields.io/badge/Networking-TCP/IP-orange?style=for-the-badge) |
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-### 📂 Projetos de Destaque
+## 📌 Sobre o Projeto
 
-#### 🌐 [Dashboard de Monitoramento de APIs](https://github.com/Anemilton-Leite/nome-do-repositorio)
-Aplicação Full-stack (Node.js + Vanilla JS) que consome dados externos e apresenta indicadores dinâmicos em tempo real, unindo habilidades de **Front-end** e **Consumo de APIs**.
+Este projeto utiliza o clássico **California Housing Dataset** para construir e comparar modelos de regressão capazes de prever o valor médio de imóveis com base em características como localização, tamanho, renda da região, entre outros.
 
-#### ☁️ [Laboratórios de Infraestrutura GCP](https://github.com/Anemilton-Leite/nome-do-repositorio)
-Repositório documentando automações em nuvem, configuração de instâncias de VM, regras de firewall e gerenciamento de armazenamento (Buckets) via CLI.
-
----
-
-### 📊 Estatísticas e Atividade
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Anemilton-Leite&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anemilton-Leite&layout=compact&langs_count=7&theme=tokyonight"/>
-</p>
+### Objetivos
+- Realizar uma análise exploratória completa dos dados
+- Aplicar técnicas de pré-processamento e feature engineering
+- Treinar e comparar múltiplos modelos de regressão
+- Avaliar os modelos com métricas robustas
+- Gerar relatório visual com os resultados
 
 ---
 
-### 🤝 Conecte-se comigo
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/anemilton-moura-b7309a1b8)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Anemilton01@gmail.com)
+## 🗂️ Estrutura do Projeto
+
+```
+ml-price-predictor/
+│
+├── data/                  # Dados brutos e processados
+│   └── housing.csv
+│
+├── notebooks/             # Jupyter Notebooks de exploração
+│   └── eda.ipynb
+│
+├── src/                   # Código-fonte principal
+│   ├── __init__.py
+│   ├── data_loader.py     # Carregamento e limpeza dos dados
+│   ├── preprocessing.py   # Pré-processamento e feature engineering
+│   ├── train.py           # Treinamento dos modelos
+│   └── evaluate.py        # Avaliação e métricas
+│
+├── models/                # Modelos serializados (.pkl)
+│
+├── reports/               # Gráficos e relatórios gerados
+│
+├── main.py                # Pipeline principal
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-### ⚡ Por que me contratar?
-*   **Perfil Híbrido:** Domínio de lógica em baixo nível (C), desenvolvimento web moderno (Node/JS) e infraestrutura (GCP/Redes).
-*   **Soft Skills de Liderança:** Experiência comprovada em gestão de equipes e KPIs, facilitando a integração em times ágeis.
-*   **Foco em Segurança:** Conhecimento prático da tríade CIA e normas ISO 27001, garantindo código e infraestrutura mais resilientes.
+## 🚀 Como Usar
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/ml-price-predictor.git
+cd ml-price-predictor
+```
+
+### 2. Crie o ambiente virtual e instale as dependências
+
+```bash
+python -m venv venv
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
+
+pip install -r requirements.txt
+```
+
+### 3. Execute o pipeline completo
+
+```bash
+python main.py
+```
+
+### 4. (Opcional) Explore o notebook de EDA
+
+```bash
+jupyter notebook notebooks/eda.ipynb
+```
+
+---
+
+## 📊 Modelos Utilizados
+
+| Modelo                  | Descrição                                      |
+|-------------------------|------------------------------------------------|
+| Linear Regression       | Modelo base simples                            |
+| Ridge Regression        | Regressão com regularização L2                 |
+| Random Forest Regressor | Ensemble de árvores de decisão                 |
+| Gradient Boosting       | Boosting com árvores de decisão                |
+
+---
+
+## 📈 Métricas de Avaliação
+
+- **MAE** – Mean Absolute Error
+- **RMSE** – Root Mean Squared Error
+- **R²** – Coeficiente de determinação
+
+---
+
+## 🛠️ Tecnologias
+
+- Python 3.9+
+- pandas, numpy
+- scikit-learn
+- matplotlib, seaborn
+- joblib
+- jupyter
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
